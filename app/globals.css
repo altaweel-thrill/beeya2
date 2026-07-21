@@ -64,17 +64,17 @@ a { color: inherit; text-decoration: none; }
   left: 0;
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(238, 186, 41, .55);
+  border: 1px solid var(--gold);
   border-radius: 50%;
-  background: rgba(17, 17, 15, .78);
-  color: var(--gold);
+  background: var(--gold);
+  color: var(--black);
   display: grid;
   place-items: center;
   cursor: pointer;
   z-index: 2;
   transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease;
 }
-.share-button:hover { color: var(--black); background: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
+.share-button:hover { color: var(--black); background: var(--gold-soft); border-color: var(--gold-soft); transform: translateY(-2px); }
 .share-button:focus-visible, a:focus-visible { outline: 3px solid var(--gold-soft); outline-offset: 4px; }
 
 .profile-header { text-align: center; animation: rise .6s both; }
@@ -110,8 +110,8 @@ a { color: inherit; text-decoration: none; }
 .link-card.featured { color: var(--black); border-color: var(--gold); background: linear-gradient(135deg, var(--gold-soft), var(--gold)); }
 .link-card.featured:hover { border-color: #ffe18d; box-shadow: 0 10px 35px rgba(238, 186, 41, .15); }
 
-.link-icon { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid rgba(238, 186, 41, .32); border-radius: 50%; color: var(--gold); background: rgba(238, 186, 41, .06); }
-.featured .link-icon { color: var(--black); border-color: rgba(0,0,0,.28); background: rgba(0,0,0,.07); }
+.link-icon { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--black); background: var(--gold); box-shadow: 0 4px 16px rgba(238, 186, 41, .14); }
+.featured .link-icon { color: var(--black); border-color: rgba(0,0,0,.28); background: #ffda63; box-shadow: none; }
 .link-copy { min-width: 0; line-height: 1.3; }
 .link-copy strong { display: block; font: 700 .95rem/1.3 "Manrope", "Noto Sans Arabic", sans-serif; unicode-bidi: plaintext; text-align: right; }
 .link-copy small { display: block; color: var(--muted); font-size: .7rem; margin-top: 5px; text-align: right; }
