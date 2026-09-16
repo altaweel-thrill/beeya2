@@ -10,6 +10,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faAddressCard,
   faArrowLeft,
   faLocationDot,
   faPhone,
@@ -22,6 +23,7 @@ const accounts = {
   instagram: "https://www.instagram.com/p/DasUIF1jLBr/?igsh=MWQ4YWUwYnFwNWE0bg==",
   maps: "https://maps.app.goo.gl/geCFB3AthX9LxFVUA?g_st=iw",
   phone: "tel:+966561817777",
+  contact: "/Bilal-Alfarran.vcf",
   whatsapp: "https://wa.me/966561817777",
 };
 
@@ -31,6 +33,7 @@ const links = [
   { title: "Snapchat", subtitle: "أضيفونا على سناب شات", href: accounts.snapchat, icon: "snapchat" },
   { title: "Google Maps", subtitle: "موقعنا على الخريطة", href: accounts.maps, icon: "map" },
   { title: "اتصل بنا", subtitle: "يسعدنا سماعكم", href: accounts.phone, icon: "phone" },
+  { title: "إضافة إلى جهات الاتصال", subtitle: "حفظ بطاقة بلال الفران", href: accounts.contact, icon: "contact", download: true },
   { title: "WhatsApp", subtitle: "تواصلوا معنا مباشرة", href: accounts.whatsapp, icon: "whatsapp", featured: true },
 ];
 
@@ -41,6 +44,7 @@ const iconMap = {
   snapchat: faSnapchat,
   map: faLocationDot,
   phone: faPhone,
+  contact: faAddressCard,
   whatsapp: faWhatsapp,
   arrow: faArrowLeft,
 };
@@ -100,8 +104,9 @@ export default function Home() {
               className={`link-card${link.featured ? " featured" : ""}`}
               href={link.href}
               key={link.title}
-              target={link.icon === "phone" ? undefined : "_blank"}
-              rel={link.icon === "phone" ? undefined : "noopener noreferrer"}
+              target={link.icon === "phone" || link.download ? undefined : "_blank"}
+              rel={link.icon === "phone" || link.download ? undefined : "noopener noreferrer"}
+              download={link.download ? "Bilal-Alfarran.vcf" : undefined}
               style={{ "--delay": `${100 + index * 70}ms` }}
             >
               <span className="link-icon"><Icon name={link.icon} /></span>
