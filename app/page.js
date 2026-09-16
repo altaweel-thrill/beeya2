@@ -18,13 +18,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const accounts = {
-  tiktok: "https://vt.tiktok.com/ZSXDnd2Qc/",
-  snapchat: "https://snapchat.com/t/sMLfLiEJ",
-  instagram: "https://www.instagram.com/p/DasUIF1jLBr/?igsh=MWQ4YWUwYnFwNWE0bg==",
+  tiktok: "https://www.tiktok.com/@beeya.protection?_r=1&_t=ZS-99m1i21kvDh",
+  snapchat: "https://www.snapchat.com/@beeyaprotection?share_id=qIbASw2ZTrClgCXABDHTVg&locale=en_SA@calendar=gregorian",
+  instagram: "https://www.instagram.com/beeya.protection?stkn=MWo3bnJsc2dnZDN6cA%3D%3D&utm_source=qr",
   maps: "https://maps.app.goo.gl/geCFB3AthX9LxFVUA?g_st=iw",
-  phone: "tel:+966561817777",
-  contact: "/Bilal-Alfarran.vcf",
-  whatsapp: "https://wa.me/966561817777",
+  phone: "tel:+966556926228",
+  whatsapp: "https://wa.me/966556926228",
 };
 
 const links = [
@@ -33,7 +32,6 @@ const links = [
   { title: "Snapchat", subtitle: "أضيفونا على سناب شات", href: accounts.snapchat, icon: "snapchat" },
   { title: "Google Maps", subtitle: "موقعنا على الخريطة", href: accounts.maps, icon: "map" },
   { title: "اتصل بنا", subtitle: "يسعدنا سماعكم", href: accounts.phone, icon: "phone" },
-  { title: "إضافة إلى جهات الاتصال", subtitle: "حفظ بطاقة بلال الفران", href: accounts.contact, icon: "contact", download: true },
   { title: "WhatsApp", subtitle: "تواصلوا معنا مباشرة", href: accounts.whatsapp, icon: "whatsapp", featured: true },
 ];
 
@@ -44,7 +42,6 @@ const iconMap = {
   snapchat: faSnapchat,
   map: faLocationDot,
   phone: faPhone,
-  contact: faAddressCard,
   whatsapp: faWhatsapp,
   arrow: faArrowLeft,
 };
