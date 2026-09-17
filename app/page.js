@@ -21,7 +21,7 @@ const accounts = {
   tiktok: "https://www.tiktok.com/@beeya.protection?_r=1&_t=ZS-99m1i21kvDh",
   snapchat: "https://www.snapchat.com/@beeyaprotection?share_id=qIbASw2ZTrClgCXABDHTVg&locale=en_SA@calendar=gregorian",
   instagram: "https://www.instagram.com/beeya.protection?stkn=MWo3bnJsc2dnZDN6cA%3D%3D&utm_source=qr",
-  maps: "https://maps.app.goo.gl/geCFB3AthX9LxFVUA?g_st=iw",
+  maps: "https://maps.app.goo.gl/t48mruzs3jwBPrC67?g_st=iw",
   phone: "tel:+966556926228",
   whatsapp: "https://wa.me/966556926228",
 };
